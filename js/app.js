@@ -10,11 +10,14 @@
 
 const   $INPUT = document.querySelector(".input-nota")
 const   $SELECT = document.querySelector(".select-materia")
+
+
+
 let     count = 1;
 
 //max count es maxima cantidad de materias menos uno Ej: si el maximo es 9 materias, entonces maxcount =10 
 let     maxCount = 10;
-
+document.getElementById('contador').textContent =`0/${maxCount-1}`
 const $TABLE = document.getElementById("table")
 const fragment  = document.createDocumentFragment()
 
