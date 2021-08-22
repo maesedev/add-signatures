@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Informatica</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        *{
+            font-family: 'Atkinson Hyperlegible', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="css/alertify.min.css" />
+    <link rel="stylesheet" href="css/themes/default.min.css" /> 
+</head>
+<body>
+    
+    <div id="main-container">
+        <div class="instructions" title="instrucciones"></div>
+        <form action="">
+            <select required class="select-materia">
+                <option value="">Matematicas</option>
+                <option value="">Ciencias ciudadanas</option>
+                <option value="">Ciencias sociales</option>
+                <option value="">Química</option>
+                <option value="">Física</option>
+                <option value="">Lengua castellana</option>
+                <option value="">Informatica</option>
+                <option value="">Educacion Fisica</option>
+                <option value="">Tutoria</option>
+            </select>
+            <input  required class="input input-nota" value="10" maxlength="2" max="50" min="10" placeholder="nota" type="number" id="nota">
+            <button id="submit-btn" type="button">agregar materia</button>
+        </form>
+        <div class="submit-section">
+            <div id="contador">0/7</div>
+            <div class="materias">
+                <table id="table">
+                    <tr class="table-titulo">
+                        <td>Materia</td>
+                        <td>Nota</td>
+                    </tr>
+                </table>
+                </div>
+                <button id="bonice-o-miedo" type="button">¿Paso el periodo?</button>
+            </div>
+        </div>
+    </div>
+    
+    <script  src="app.js" type="text/javascript">
+
+</script>
+<script src="alertify.min.js"></script>
+</body>
+</html>
