@@ -14,15 +14,15 @@
 }
 
 body{
-    overflow: hidden;
-    padding:15vh ;
+    max-height: 120vh;
+    padding: 15vh  15vh 0 15vh;
     background-color: var(--main-color);
     background-image: url(img/sea-6553205_1920.jpg);
-    background-blend-mode: exclusion;
+    background-blend-mode: hard-light;
 }
 
 #main-container{
-    padding:100px;
+    padding:100px 100px 0 100px;
 }
 
 form{
@@ -64,6 +64,8 @@ form{
     border-radius: 2rem;
     text-align: center;
     padding: 10px 10px 0 10px;
+    box-shadow: 0 0 15px 1px #0005;
+
 }
 select{
     font-size: 1.5em;
@@ -73,6 +75,7 @@ select{
     border-radius: 2rem;
     text-align: center;
     padding: 10px 10px 0 10px;
+    box-shadow: 0 0 15px 1px #0005;
 }
 button#submit-btn ,
 button#bonice-o-miedo{
@@ -90,8 +93,6 @@ button#bonice-o-miedo{
 
 #table{
     width:500px;
-    max-height: 266px;
-    overflow-y: scroll;
 }
 
 #table tr{
@@ -112,4 +113,9 @@ td {
     height: 30px;
     padding: 10px;
     border: 1px solid var(--main-color-dark);
+}
+
+
+.table-materias td {
+    background: var(--main-color);
 }
