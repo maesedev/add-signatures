@@ -17,6 +17,8 @@ body{
     overflow: hidden;
     padding:15vh ;
     background-color: var(--main-color);
+    background-image: url(img/sea-6553205_1920.jpg);
+    background-blend-mode: exclusion;
 }
 
 #main-container{
